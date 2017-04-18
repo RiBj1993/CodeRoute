@@ -270,7 +270,7 @@
 		619BFE6B1E7885B800D3FD5E /* RoundedButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
 		619BFE6D1E7885E200D3FD5E /* RoundedLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedLabel.swift; sourceTree = "<group>"; };
 		619BFE6F1E78862200D3FD5E /* Constants+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Constants+Extensions.swift"; sourceTree = "<group>"; };
-		619BFE711E78864700D3FD5E /* MmenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MmenuViewController.swift; path = "../../../Desktop/LoginForm-master/MmenuViewController.swift"; sourceTree = "<group>"; };
+		619BFE711E78864700D3FD5E /* MmenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MmenuViewController.swift; sourceTree = "<group>"; };
 		619BFE731E78866D00D3FD5E /* MultipleChoiceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MultipleChoiceViewController.swift; sourceTree = "<group>"; };
 		61E384A21E6E1389007B1D57 /* LoginForm-BridgingHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "LoginForm-BridgingHeader.h"; sourceTree = SOURCE_ROOT; };
 		61E384A31E6E1389007B1D57 /* LoginForm-BridgingHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "LoginForm-BridgingHeader.m"; sourceTree = SOURCE_ROOT; };
@@ -455,7 +455,6 @@
 		6147EE6B1E94AC9D0040CB92 /* SwiftyGifExample */ = {
 			isa = PBXGroup;
 			children = (
-				619BFE711E78864700D3FD5E /* MmenuViewController.swift */,
 				610637901E9593B200CDC43B /* road6.gif */,
 				610637911E9593B200CDC43B /* road8.gif */,
 				6106379A1E95947B00CDC43B /* road3.gif */,
@@ -682,6 +681,7 @@
 				619BFE6F1E78862200D3FD5E /* Constants+Extensions.swift */,
 				619BFE6D1E7885E200D3FD5E /* RoundedLabel.swift */,
 				619BFE6B1E7885B800D3FD5E /* RoundedButton.swift */,
+				619BFE711E78864700D3FD5E /* MmenuViewController.swift */,
 				619BFE731E78866D00D3FD5E /* MultipleChoiceViewController.swift */,
 				619A1D9C1E6F4D1C00A52FFF /* QwizViewController.swift */,
 			);
