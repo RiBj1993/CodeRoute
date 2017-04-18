@@ -258,14 +258,14 @@
 		6159B2831E77669600A3E465 /* UnwindSegue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnwindSegue.swift; sourceTree = "<group>"; };
 		6159B2A81E776AC500A3E465 /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SwiftyJSON.swift; path = ../SwiftRadio/Libraries/SwiftyJSON.swift; sourceTree = "<group>"; };
 		6159B2AB1E77716A00A3E465 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		6187B4E41EA5921400F5A842 /* QwizSongViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QwizSongViewController.swift; sourceTree = "<group>"; };
-		6187B4EB1EA5921400F5A842 /* GameSoundWrong.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = GameSoundWrong.wav; sourceTree = "<group>"; };
-		6187B4EC1EA5921400F5A842 /* GameSoundCorrect.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = GameSoundCorrect.wav; sourceTree = "<group>"; };
-		6187B4ED1EA5921400F5A842 /* GameSound.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = GameSound.wav; sourceTree = "<group>"; };
-		6187B4EE1EA5921400F5A842 /* GameSoundFinished.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = GameSoundFinished.wav; sourceTree = "<group>"; };
-		6187B4EF1EA5921400F5A842 /* GameSoundRetry.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = GameSoundRetry.wav; sourceTree = "<group>"; };
-		6187B4F01EA5921400F5A842 /* GameSoundTimerEnd.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = GameSoundTimerEnd.wav; sourceTree = "<group>"; };
-		6187B4F11EA5921400F5A842 /* TriviaModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TriviaModel.swift; sourceTree = "<group>"; };
+		6187B4E41EA5921400F5A842 /* QwizSongViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = QwizSongViewController.swift; path = "../../Downloads/QuizApp-master/TrueFalseStarter/QwizSongViewController.swift"; sourceTree = "<group>"; };
+		6187B4EB1EA5921400F5A842 /* GameSoundWrong.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = GameSoundWrong.wav; path = "../../Downloads/QuizApp-master/TrueFalseStarter/GameSoundWrong.wav"; sourceTree = "<group>"; };
+		6187B4EC1EA5921400F5A842 /* GameSoundCorrect.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = GameSoundCorrect.wav; path = "../../Downloads/QuizApp-master/TrueFalseStarter/GameSoundCorrect.wav"; sourceTree = "<group>"; };
+		6187B4ED1EA5921400F5A842 /* GameSound.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = GameSound.wav; path = "../../Downloads/QuizApp-master/TrueFalseStarter/GameSound.wav"; sourceTree = "<group>"; };
+		6187B4EE1EA5921400F5A842 /* GameSoundFinished.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = GameSoundFinished.wav; path = "../../Downloads/QuizApp-master/TrueFalseStarter/GameSoundFinished.wav"; sourceTree = "<group>"; };
+		6187B4EF1EA5921400F5A842 /* GameSoundRetry.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = GameSoundRetry.wav; path = "../../Downloads/QuizApp-master/TrueFalseStarter/GameSoundRetry.wav"; sourceTree = "<group>"; };
+		6187B4F01EA5921400F5A842 /* GameSoundTimerEnd.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = GameSoundTimerEnd.wav; path = "../../Downloads/QuizApp-master/TrueFalseStarter/GameSoundTimerEnd.wav"; sourceTree = "<group>"; };
+		6187B4F11EA5921400F5A842 /* TriviaModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TriviaModel.swift; path = "../../Downloads/QuizApp-master/TrueFalseStarter/TriviaModel.swift"; sourceTree = "<group>"; };
 		619A1D9C1E6F4D1C00A52FFF /* QwizViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QwizViewController.swift; sourceTree = "<group>"; };
 		619BFE6B1E7885B800D3FD5E /* RoundedButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
 		619BFE6D1E7885E200D3FD5E /* RoundedLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedLabel.swift; sourceTree = "<group>"; };
@@ -649,22 +649,6 @@
 			path = "Pods/../../../Downloads/Swift-Radio-Pro-master/RadioPro";
 			sourceTree = "<group>";
 		};
-		6187B4F21EA5921400F5A842 /* QuizApp */ = {
-			isa = PBXGroup;
-			children = (
-				6187B4E41EA5921400F5A842 /* QwizSongViewController.swift */,
-				6187B4EB1EA5921400F5A842 /* GameSoundWrong.wav */,
-				6187B4EC1EA5921400F5A842 /* GameSoundCorrect.wav */,
-				6187B4ED1EA5921400F5A842 /* GameSound.wav */,
-				6187B4EE1EA5921400F5A842 /* GameSoundFinished.wav */,
-				6187B4EF1EA5921400F5A842 /* GameSoundRetry.wav */,
-				6187B4F01EA5921400F5A842 /* GameSoundTimerEnd.wav */,
-				6187B4F11EA5921400F5A842 /* TriviaModel.swift */,
-			);
-			name = QuizApp;
-			path = "../../Downloads/QuizApp-master/TrueFalseStarter";
-			sourceTree = "<group>";
-		};
 		61EC1F541E6FA11D0023D832 /* GuillotineMenu */ = {
 			isa = PBXGroup;
 			children = (
@@ -713,7 +697,14 @@
 		B0802A0E1DFE9E19000517D7 = {
 			isa = PBXGroup;
 			children = (
-				6187B4F21EA5921400F5A842 /* QuizApp */,
+				6187B4ED1EA5921400F5A842 /* GameSound.wav */,
+				6187B4EF1EA5921400F5A842 /* GameSoundRetry.wav */,
+				6187B4F01EA5921400F5A842 /* GameSoundTimerEnd.wav */,
+				6187B4EE1EA5921400F5A842 /* GameSoundFinished.wav */,
+				6187B4F11EA5921400F5A842 /* TriviaModel.swift */,
+				6187B4EC1EA5921400F5A842 /* GameSoundCorrect.wav */,
+				6187B4EB1EA5921400F5A842 /* GameSoundWrong.wav */,
+				6187B4E41EA5921400F5A842 /* QwizSongViewController.swift */,
 				6147EE6B1E94AC9D0040CB92 /* SwiftyGifExample */,
 				619BFE731E78866D00D3FD5E /* MultipleChoiceViewController.swift */,
 				619BFE711E78864700D3FD5E /* MmenuViewController.swift */,
