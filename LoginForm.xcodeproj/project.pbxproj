@@ -95,6 +95,14 @@
 		6159B2A31E77669600A3E465 /* UnwindSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6159B2831E77669600A3E465 /* UnwindSegue.swift */; };
 		6159B2A91E776AC500A3E465 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6159B2A81E776AC500A3E465 /* SwiftyJSON.swift */; };
 		6159B2AC1E77716A00A3E465 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6159B2AA1E77716A00A3E465 /* Main.storyboard */; };
+		6187B4F41EA5921400F5A842 /* QwizSongViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6187B4E41EA5921400F5A842 /* QwizSongViewController.swift */; };
+		6187B4F91EA5921400F5A842 /* GameSoundWrong.wav in Resources */ = {isa = PBXBuildFile; fileRef = 6187B4EB1EA5921400F5A842 /* GameSoundWrong.wav */; };
+		6187B4FA1EA5921400F5A842 /* GameSoundCorrect.wav in Resources */ = {isa = PBXBuildFile; fileRef = 6187B4EC1EA5921400F5A842 /* GameSoundCorrect.wav */; };
+		6187B4FB1EA5921400F5A842 /* GameSound.wav in Resources */ = {isa = PBXBuildFile; fileRef = 6187B4ED1EA5921400F5A842 /* GameSound.wav */; };
+		6187B4FC1EA5921400F5A842 /* GameSoundFinished.wav in Resources */ = {isa = PBXBuildFile; fileRef = 6187B4EE1EA5921400F5A842 /* GameSoundFinished.wav */; };
+		6187B4FD1EA5921400F5A842 /* GameSoundRetry.wav in Resources */ = {isa = PBXBuildFile; fileRef = 6187B4EF1EA5921400F5A842 /* GameSoundRetry.wav */; };
+		6187B4FE1EA5921400F5A842 /* GameSoundTimerEnd.wav in Resources */ = {isa = PBXBuildFile; fileRef = 6187B4F01EA5921400F5A842 /* GameSoundTimerEnd.wav */; };
+		6187B4FF1EA5921400F5A842 /* TriviaModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6187B4F11EA5921400F5A842 /* TriviaModel.swift */; };
 		619A1D9D1E6F4D1C00A52FFF /* QwizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 619A1D9C1E6F4D1C00A52FFF /* QwizViewController.swift */; };
 		619BFE6C1E7885B800D3FD5E /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 619BFE6B1E7885B800D3FD5E /* RoundedButton.swift */; };
 		619BFE6E1E7885E200D3FD5E /* RoundedLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 619BFE6D1E7885E200D3FD5E /* RoundedLabel.swift */; };
@@ -250,6 +258,14 @@
 		6159B2831E77669600A3E465 /* UnwindSegue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnwindSegue.swift; sourceTree = "<group>"; };
 		6159B2A81E776AC500A3E465 /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SwiftyJSON.swift; path = ../SwiftRadio/Libraries/SwiftyJSON.swift; sourceTree = "<group>"; };
 		6159B2AB1E77716A00A3E465 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6187B4E41EA5921400F5A842 /* QwizSongViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QwizSongViewController.swift; sourceTree = "<group>"; };
+		6187B4EB1EA5921400F5A842 /* GameSoundWrong.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = GameSoundWrong.wav; sourceTree = "<group>"; };
+		6187B4EC1EA5921400F5A842 /* GameSoundCorrect.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = GameSoundCorrect.wav; sourceTree = "<group>"; };
+		6187B4ED1EA5921400F5A842 /* GameSound.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = GameSound.wav; sourceTree = "<group>"; };
+		6187B4EE1EA5921400F5A842 /* GameSoundFinished.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = GameSoundFinished.wav; sourceTree = "<group>"; };
+		6187B4EF1EA5921400F5A842 /* GameSoundRetry.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = GameSoundRetry.wav; sourceTree = "<group>"; };
+		6187B4F01EA5921400F5A842 /* GameSoundTimerEnd.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = GameSoundTimerEnd.wav; sourceTree = "<group>"; };
+		6187B4F11EA5921400F5A842 /* TriviaModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TriviaModel.swift; sourceTree = "<group>"; };
 		619A1D9C1E6F4D1C00A52FFF /* QwizViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QwizViewController.swift; sourceTree = "<group>"; };
 		619BFE6B1E7885B800D3FD5E /* RoundedButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
 		619BFE6D1E7885E200D3FD5E /* RoundedLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedLabel.swift; sourceTree = "<group>"; };
@@ -633,6 +649,22 @@
 			path = "Pods/../../../Downloads/Swift-Radio-Pro-master/RadioPro";
 			sourceTree = "<group>";
 		};
+		6187B4F21EA5921400F5A842 /* QuizApp */ = {
+			isa = PBXGroup;
+			children = (
+				6187B4E41EA5921400F5A842 /* QwizSongViewController.swift */,
+				6187B4EB1EA5921400F5A842 /* GameSoundWrong.wav */,
+				6187B4EC1EA5921400F5A842 /* GameSoundCorrect.wav */,
+				6187B4ED1EA5921400F5A842 /* GameSound.wav */,
+				6187B4EE1EA5921400F5A842 /* GameSoundFinished.wav */,
+				6187B4EF1EA5921400F5A842 /* GameSoundRetry.wav */,
+				6187B4F01EA5921400F5A842 /* GameSoundTimerEnd.wav */,
+				6187B4F11EA5921400F5A842 /* TriviaModel.swift */,
+			);
+			name = QuizApp;
+			path = "../../Downloads/QuizApp-master/TrueFalseStarter";
+			sourceTree = "<group>";
+		};
 		61EC1F541E6FA11D0023D832 /* GuillotineMenu */ = {
 			isa = PBXGroup;
 			children = (
@@ -681,6 +713,7 @@
 		B0802A0E1DFE9E19000517D7 = {
 			isa = PBXGroup;
 			children = (
+				6187B4F21EA5921400F5A842 /* QuizApp */,
 				6147EE6B1E94AC9D0040CB92 /* SwiftyGifExample */,
 				619BFE731E78866D00D3FD5E /* MultipleChoiceViewController.swift */,
 				619BFE711E78864700D3FD5E /* MmenuViewController.swift */,
@@ -831,14 +864,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6187B4FC1EA5921400F5A842 /* GameSoundFinished.wav in Resources */,
 				6106379B1E95947B00CDC43B /* road3.gif in Resources */,
 				B0802A251DFE9E19000517D7 /* LaunchScreen.storyboard in Resources */,
 				61EC1F681E6FA11D0023D832 /* content_1@3x.png in Resources */,
 				610637A11E959A8500CDC43B /* road16.gif in Resources */,
+				6187B4FB1EA5921400F5A842 /* GameSound.wav in Resources */,
 				6147EE771E94AC9D0040CB92 /* 5.gif in Resources */,
 				61EC1F6A1E6FA11D0023D832 /* ic_activity@3x.png in Resources */,
 				B06CDC051E01508100D528D0 /* screenshot1.png in Resources */,
 				610637991E9593B200CDC43B /* road2.gif in Resources */,
+				6187B4FE1EA5921400F5A842 /* GameSoundTimerEnd.wav in Resources */,
 				6147EE741E94AC9D0040CB92 /* 3.gif in Resources */,
 				B06CDC061E01508100D528D0 /* screenshot2.png in Resources */,
 				61EC1F6E1E6FA11D0023D832 /* ic_settings@3x.png in Resources */,
@@ -849,14 +885,17 @@
 				6159B2961E77669600A3E465 /* LoadingView.xib in Resources */,
 				6159B2931E77669600A3E465 /* Info.plist in Resources */,
 				610637961E9593B200CDC43B /* road8.gif in Resources */,
+				6187B4F91EA5921400F5A842 /* GameSoundWrong.wav in Resources */,
 				6147EE781E94AC9D0040CB92 /* Info.plist in Resources */,
 				6147EE7A1E94ADC60040CB92 /* PHOGIF.gif in Resources */,
 				6147EE761E94AC9D0040CB92 /* 4.gif in Resources */,
 				6106379F1E95988200CDC43B /* road14.gif in Resources */,
 				610637981E9593B200CDC43B /* road11.gif in Resources */,
+				6187B4FA1EA5921400F5A842 /* GameSoundCorrect.wav in Resources */,
 				6159B2AC1E77716A00A3E465 /* Main.storyboard in Resources */,
 				61EC1F691E6FA11D0023D832 /* content_2@3x.png in Resources */,
 				61EC1F6B1E6FA11D0023D832 /* ic_feed@3x.png in Resources */,
+				6187B4FD1EA5921400F5A842 /* GameSoundRetry.wav in Resources */,
 				610637971E9593B200CDC43B /* road10.gif in Resources */,
 				610637A51E959C8300CDC43B /* road1.gif in Resources */,
 				6159B1F31E775E5D00A3E465 /* stations.json in Resources */,
@@ -934,6 +973,7 @@
 				6147EE701E94AC9D0040CB92 /* Cell.swift in Sources */,
 				6147EE081E948E4E0040CB92 /* EntryCell.swift in Sources */,
 				61305C7E1E94571400B93099 /* CarouselCollectionViewCell.swift in Sources */,
+				6187B4F41EA5921400F5A842 /* QwizSongViewController.swift in Sources */,
 				B0802A2F1DFEA963000517D7 /* UIViewExtension.swift in Sources */,
 				61EC1F711E6FA11D0023D832 /* MenuViewController.swift in Sources */,
 				6147EE091E948E4E0040CB92 /* NavigationViewController.swift in Sources */,
@@ -963,6 +1003,7 @@
 				6159B1F21E775E5D00A3E465 /* StationTableViewCell.swift in Sources */,
 				619BFE6C1E7885B800D3FD5E /* RoundedButton.swift in Sources */,
 				61EC1F701E6FA11D0023D832 /* ViewController.swift in Sources */,
+				6187B4FF1EA5921400F5A842 /* TriviaModel.swift in Sources */,
 				6159B1FE1E775E5D00A3E465 /* UIImageView+Download.swift in Sources */,
 				6159B1F41E775E5D00A3E465 /* RadioStation.swift in Sources */,
 				6159B2A11E77669600A3E465 /* TransitionManager.swift in Sources */,
