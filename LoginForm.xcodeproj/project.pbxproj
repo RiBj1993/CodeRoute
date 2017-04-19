@@ -95,7 +95,6 @@
 		6159B2A31E77669600A3E465 /* UnwindSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6159B2831E77669600A3E465 /* UnwindSegue.swift */; };
 		6159B2A91E776AC500A3E465 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6159B2A81E776AC500A3E465 /* SwiftyJSON.swift */; };
 		6159B2AC1E77716A00A3E465 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6159B2AA1E77716A00A3E465 /* Main.storyboard */; };
-		6187B4F41EA5921400F5A842 /* QwizSongViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6187B4E41EA5921400F5A842 /* QwizSongViewController.swift */; };
 		6187B5081EA5976900F5A842 /* GameSoundWrong.wav in Resources */ = {isa = PBXBuildFile; fileRef = 6187B5011EA5976900F5A842 /* GameSoundWrong.wav */; };
 		6187B5091EA5976900F5A842 /* GameSoundCorrect.wav in Resources */ = {isa = PBXBuildFile; fileRef = 6187B5021EA5976900F5A842 /* GameSoundCorrect.wav */; };
 		6187B50A1EA5976900F5A842 /* GameSound.wav in Resources */ = {isa = PBXBuildFile; fileRef = 6187B5031EA5976900F5A842 /* GameSound.wav */; };
@@ -103,12 +102,15 @@
 		6187B50C1EA5976900F5A842 /* GameSoundRetry.wav in Resources */ = {isa = PBXBuildFile; fileRef = 6187B5051EA5976900F5A842 /* GameSoundRetry.wav */; };
 		6187B50D1EA5976900F5A842 /* GameSoundTimerEnd.wav in Resources */ = {isa = PBXBuildFile; fileRef = 6187B5061EA5976900F5A842 /* GameSoundTimerEnd.wav */; };
 		6187B50E1EA5976900F5A842 /* TriviaModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6187B5071EA5976900F5A842 /* TriviaModel.swift */; };
-		619A1D9D1E6F4D1C00A52FFF /* QwizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 619A1D9C1E6F4D1C00A52FFF /* QwizViewController.swift */; };
+		619A1D9D1E6F4D1C00A52FFF /* QwizSongViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 619A1D9C1E6F4D1C00A52FFF /* QwizSongViewController.swift */; };
 		619BFE6C1E7885B800D3FD5E /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 619BFE6B1E7885B800D3FD5E /* RoundedButton.swift */; };
 		619BFE6E1E7885E200D3FD5E /* RoundedLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 619BFE6D1E7885E200D3FD5E /* RoundedLabel.swift */; };
 		619BFE701E78862200D3FD5E /* Constants+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 619BFE6F1E78862200D3FD5E /* Constants+Extensions.swift */; };
 		619BFE721E78864700D3FD5E /* MmenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 619BFE711E78864700D3FD5E /* MmenuViewController.swift */; };
 		619BFE741E78866D00D3FD5E /* MultipleChoiceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 619BFE731E78866D00D3FD5E /* MultipleChoiceViewController.swift */; };
+		61A0316D1EA6942C005E105E /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61A0316A1EA6942C005E105E /* Bolts.framework */; };
+		61A0316E1EA6942C005E105E /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61A0316B1EA6942C005E105E /* FBSDKCoreKit.framework */; };
+		61A0316F1EA6942C005E105E /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61A0316C1EA6942C005E105E /* FBSDKLoginKit.framework */; };
 		61E384A41E6E1389007B1D57 /* LoginForm-BridgingHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 61E384A31E6E1389007B1D57 /* LoginForm-BridgingHeader.m */; };
 		61E3855E1E6E40DE007B1D57 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 61E3855D1E6E40DE007B1D57 /* GoogleService-Info.plist */; };
 		61EC1F661E6FA11D0023D832 /* ic_menu@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 61EC1F521E6FA11D0023D832 /* ic_menu@3x.png */; };
@@ -258,7 +260,6 @@
 		6159B2831E77669600A3E465 /* UnwindSegue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnwindSegue.swift; sourceTree = "<group>"; };
 		6159B2A81E776AC500A3E465 /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SwiftyJSON.swift; path = ../SwiftRadio/Libraries/SwiftyJSON.swift; sourceTree = "<group>"; };
 		6159B2AB1E77716A00A3E465 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		6187B4E41EA5921400F5A842 /* QwizSongViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = QwizSongViewController.swift; path = "../../Downloads/QuizApp-master/TrueFalseStarter/QwizSongViewController.swift"; sourceTree = "<group>"; };
 		6187B5011EA5976900F5A842 /* GameSoundWrong.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = GameSoundWrong.wav; sourceTree = "<group>"; };
 		6187B5021EA5976900F5A842 /* GameSoundCorrect.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = GameSoundCorrect.wav; sourceTree = "<group>"; };
 		6187B5031EA5976900F5A842 /* GameSound.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = GameSound.wav; sourceTree = "<group>"; };
@@ -266,12 +267,15 @@
 		6187B5051EA5976900F5A842 /* GameSoundRetry.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = GameSoundRetry.wav; sourceTree = "<group>"; };
 		6187B5061EA5976900F5A842 /* GameSoundTimerEnd.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = GameSoundTimerEnd.wav; sourceTree = "<group>"; };
 		6187B5071EA5976900F5A842 /* TriviaModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TriviaModel.swift; sourceTree = "<group>"; };
-		619A1D9C1E6F4D1C00A52FFF /* QwizViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = QwizViewController.swift; path = LoginForm/QwizViewController.swift; sourceTree = "<group>"; };
+		619A1D9C1E6F4D1C00A52FFF /* QwizSongViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = QwizSongViewController.swift; path = LoginForm/QwizSongViewController.swift; sourceTree = "<group>"; };
 		619BFE6B1E7885B800D3FD5E /* RoundedButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
 		619BFE6D1E7885E200D3FD5E /* RoundedLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedLabel.swift; sourceTree = "<group>"; };
 		619BFE6F1E78862200D3FD5E /* Constants+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Constants+Extensions.swift"; sourceTree = "<group>"; };
 		619BFE711E78864700D3FD5E /* MmenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MmenuViewController.swift; sourceTree = "<group>"; };
 		619BFE731E78866D00D3FD5E /* MultipleChoiceViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MultipleChoiceViewController.swift; sourceTree = "<group>"; };
+		61A0316A1EA6942C005E105E /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
+		61A0316B1EA6942C005E105E /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
+		61A0316C1EA6942C005E105E /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
 		61E384A21E6E1389007B1D57 /* LoginForm-BridgingHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "LoginForm-BridgingHeader.h"; sourceTree = SOURCE_ROOT; };
 		61E384A31E6E1389007B1D57 /* LoginForm-BridgingHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "LoginForm-BridgingHeader.m"; sourceTree = SOURCE_ROOT; };
 		61E3855D1E6E40DE007B1D57 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
@@ -315,6 +319,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				61A0316D1EA6942C005E105E /* Bolts.framework in Frameworks */,
+				61A0316E1EA6942C005E105E /* FBSDKCoreKit.framework in Frameworks */,
+				61A0316F1EA6942C005E105E /* FBSDKLoginKit.framework in Frameworks */,
 				6159B1CD1E775E2800A3E465 /* MediaPlayer.framework in Frameworks */,
 				7B673EAEF80BB1C12A5A127F /* Pods_LoginForm.framework in Frameworks */,
 			);
@@ -654,7 +661,7 @@
 		6187B5001EA5973400F5A842 /* qwizgame */ = {
 			isa = PBXGroup;
 			children = (
-				6187B4E41EA5921400F5A842 /* QwizSongViewController.swift */,
+				619A1D9C1E6F4D1C00A52FFF /* QwizSongViewController.swift */,
 				6187B5011EA5976900F5A842 /* GameSoundWrong.wav */,
 				6187B5021EA5976900F5A842 /* GameSoundCorrect.wav */,
 				6187B5031EA5976900F5A842 /* GameSound.wav */,
@@ -683,9 +690,18 @@
 				619BFE6B1E7885B800D3FD5E /* RoundedButton.swift */,
 				619BFE711E78864700D3FD5E /* MmenuViewController.swift */,
 				619BFE731E78866D00D3FD5E /* MultipleChoiceViewController.swift */,
-				619A1D9C1E6F4D1C00A52FFF /* QwizViewController.swift */,
 			);
 			name = qwiz1;
+			sourceTree = "<group>";
+		};
+		61A031701EA69432005E105E /* facebook */ = {
+			isa = PBXGroup;
+			children = (
+				61A0316C1EA6942C005E105E /* FBSDKLoginKit.framework */,
+				61A0316B1EA6942C005E105E /* FBSDKCoreKit.framework */,
+				61A0316A1EA6942C005E105E /* Bolts.framework */,
+			);
+			name = facebook;
 			sourceTree = "<group>";
 		};
 		61EC1F541E6FA11D0023D832 /* GuillotineMenu */ = {
@@ -736,6 +752,7 @@
 		B0802A0E1DFE9E19000517D7 = {
 			isa = PBXGroup;
 			children = (
+				61A031701EA69432005E105E /* facebook */,
 				6187B5101EA59B4D00F5A842 /* qwiz1 */,
 				6187B50F1EA59AC700F5A842 /* menublur */,
 				6187B5001EA5973400F5A842 /* qwizgame */,
@@ -988,7 +1005,6 @@
 				6147EE701E94AC9D0040CB92 /* Cell.swift in Sources */,
 				6147EE081E948E4E0040CB92 /* EntryCell.swift in Sources */,
 				61305C7E1E94571400B93099 /* CarouselCollectionViewCell.swift in Sources */,
-				6187B4F41EA5921400F5A842 /* QwizSongViewController.swift in Sources */,
 				B0802A2F1DFEA963000517D7 /* UIViewExtension.swift in Sources */,
 				61EC1F711E6FA11D0023D832 /* MenuViewController.swift in Sources */,
 				6147EE091E948E4E0040CB92 /* NavigationViewController.swift in Sources */,
@@ -1009,7 +1025,7 @@
 				6147EE4E1E94A76B0040CB92 /* BackgroundController.swift in Sources */,
 				6159B1F61E775E5D00A3E465 /* Track.swift in Sources */,
 				6159B2941E77669600A3E465 /* KeyboardLayoutConstraint.swift in Sources */,
-				619A1D9D1E6F4D1C00A52FFF /* QwizViewController.swift in Sources */,
+				619A1D9D1E6F4D1C00A52FFF /* QwizSongViewController.swift in Sources */,
 				6159B1FC1E775E5D00A3E465 /* SwiftRadio-Settings.swift in Sources */,
 				6147EE721E94AC9D0040CB92 /* ImageGIFViewController.swift in Sources */,
 				6159B29A1E77669600A3E465 /* SpringAnimation.swift in Sources */,
@@ -1189,6 +1205,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = LoginForm/LoginForm.entitlements;
 				DEVELOPMENT_TEAM = G96V29LG5G;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = LoginForm/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.bits.dev.LoginForm;
@@ -1207,6 +1227,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = LoginForm/LoginForm.entitlements;
 				DEVELOPMENT_TEAM = G96V29LG5G;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = LoginForm/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.bits.dev.LoginForm;

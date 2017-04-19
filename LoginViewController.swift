@@ -7,12 +7,18 @@
 //
 
 import UIKit
-import Firebase
+
 
 import FirebaseAuth
 import  FirebaseDatabase
 import MobileCoreServices
-import FirebaseAuth
+
+import FBSDKLoginKit
+
+import Firebase
+import FirebaseAuthUI
+import FirebaseGoogleAuthUI
+import FirebaseFacebookAuthUI
 
 import FirebaseAnalytics
 // MARK: RegEX Declaraions
@@ -96,9 +102,9 @@ class LoginViewController: UIViewController,UITextFieldDelegate  {
     }
     
    // MARK: Button Actions
-  /*  @IBAction func signIn(_ sender: AnyObject) {
+   @IBAction func signIn(_ sender: AnyObject) {
              print("Signing In..")
-        print("Email text: \(emailTextField.text!)")
+      /*  print("Email text: \(emailTextField.text!)")
         
         self.view.endEditing(true)
         
@@ -107,16 +113,53 @@ class LoginViewController: UIViewController,UITextFieldDelegate  {
             print("everything is ok")
         }else{
             print("Something is wrong")
-        }
-        
-    }*/
+        }*/
+    
+    //passwordTextField: TextFieldValidator!
+    // @IBOutlet  weak var emailTextField: TextFieldValidator!
+    
+    FIRAuth.auth()?.signIn(withEmail: emailTextField.text as Any as! String, password:
+        passwordTextField.text as Any as! String,completion: { (user, error) in
+            
+            if user != nil{
+                print ("user exists and logged")
+                
+                
+                self.performSegue(withIdentifier: "showMenuSegue", sender: self)
+                
+            }
+            else{
+                print ("no user ")}
+            
+    })
+    
+    
+    }
     
     @IBAction func forgotPassword(_ sender: AnyObject) {
     }
 
     //Handle your logic for siging with social media here
     @IBAction func connectWithFacebook(_ sender: AnyObject) {
-        print("Signing In with facebook..")
+        let facebookLogin = FBSDKLoginManager()
+        print("Logging In")
+        facebookLogin.logIn(withReadPermissions: ["email"], from: self, handler:{(facebookResult, facebookError) -> Void in
+            if facebookError != nil { print("jhkjh")
+                //self.performSegue(withIdentifier: "Signin", sender: self)
+                
+            } else if (facebookResult?.isCancelled)! { print("Facebook login was cancelled.")
+            } else {
+                let credential = FIRFacebookAuthProvider.credential(withAccessToken: FBSDKAccessToken.current().tokenString)
+                print("You’re inz 😉")
+                FIRAuth.auth()?.signIn(with: credential) { (user, error) in
+                    
+                    if error == nil {
+                        //self.performSegue(withIdentifier: "Signin", sender: self)
+                        
+                    }
+                }}
+        });
+        
     }
     // MARK: - Navigation
     
@@ -131,24 +174,12 @@ class LoginViewController: UIViewController,UITextFieldDelegate  {
    
     @IBAction func connectWithGoogle(_ sender: Any) {
             
-            
-        //passwordTextField: TextFieldValidator!
-       // @IBOutlet  weak var emailTextField: TextFieldValidator!
-            
-            FIRAuth.auth()?.signIn(withEmail: emailTextField.text as Any as! String, password:
-             passwordTextField.text as Any as! String,completion: { (user, error) in
-                    
-                    if user != nil{
-                        print ("user exists and logged")
-                        
-                        
-                        self.performSegue(withIdentifier: "showMenuSegue", sender: self)
-                        
-                    }
-                    else{
-                        print ("no user ")}
-                    
-            })
+  
 
 }
+    
+    
+    func authUI(authUI: FIRAuthUI, didSignInWithUser user: FIRUser?, error: NSError?) {
+        // Here is where we add code after logging in
+    }
 }
