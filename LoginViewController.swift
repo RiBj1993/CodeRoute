@@ -145,16 +145,16 @@ class LoginViewController: UIViewController,UITextFieldDelegate  {
         print("Logging In")
         facebookLogin.logIn(withReadPermissions: ["email"], from: self, handler:{(facebookResult, facebookError) -> Void in
             if facebookError != nil { print("jhkjh")
-                //self.performSegue(withIdentifier: "Signin", sender: self)
+             
                 
             } else if (facebookResult?.isCancelled)! { print("Facebook login was cancelled.")
             } else {
                 let credential = FIRFacebookAuthProvider.credential(withAccessToken: FBSDKAccessToken.current().tokenString)
                 print("You’re inz 😉")
                 FIRAuth.auth()?.signIn(with: credential) { (user, error) in
-                    
+                        self.performSegue(withIdentifier: "signF", sender: self )
                     if error == nil {
-                        //self.performSegue(withIdentifier: "Signin", sender: self)
+                      self.performSegue(withIdentifier: "signF", sender: self )
                         
                     }
                 }}

@@ -15,6 +15,7 @@ import AudioToolbox
 import FirebaseDatabase
 import FirebaseStorage
 import Firebase
+import SwiftyGif
 class QwizSongViewController: UIViewController {
     var olympicTriviaQuestions: [Trivia] = []
     // removed the 'magic number' of 4 that was in the starter and replaced with .count to adjust to the amount of questions in the TriviaModel
@@ -49,20 +50,38 @@ class QwizSongViewController: UIViewController {
     @IBOutlet weak var fourthChoiceButton: UIButton!
     @IBOutlet weak var playAgainButton: UIButton!
     @IBOutlet weak var timerLabel: UILabel!
-    
+    let gifManager = SwiftyGifManager(memoryLimit:60)
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        bbbbbbc ()
-            //   loadGameStartSound()
+    bbbbbbc ()
+               loadGameStartSound()
         // Start game
   
    
-        playGameStartSound()
+         playGameStartSound()
   
-     
-       
+        // Show the answer buttons
+        firstChoiceButton.isHidden = false
+        secondChoiceButton.isHidden = false
+        thirdChoiceButton.isHidden = false
+        fourthChoiceButton.isHidden = false
+        timerLabel.isHidden = false
+         logoView.isHidden = false
         
+      
+        questionsAsked = 0
+        correctQuestions = 0
+        previousQuestionsArray.removeAll()
+        playGameStartSound()
+        nextRound()
+
+        questionField.text = " \n êtes-vous prêt pour commencer  "
+        // loadGameSoundFinished()
+        // playGameSoundFinished()
+        
+        logoView.image = UIImage(named: "Commencer.jpg")
+playAgainButton.setTitle( "Commencer" , for: .normal)
         // displayQuestion()
 
                  }
@@ -116,7 +135,7 @@ class QwizSongViewController: UIViewController {
         beginTimer()
     }
     func buttoi(VV:String) {
-        
+        logoView.image = nil
         logoView.image =
             NSURL(string:VV)
                 .flatMap { NSData(contentsOf: $0 as URL) }
@@ -130,7 +149,7 @@ class QwizSongViewController: UIViewController {
         thirdChoiceButton.isHidden = true
         fourthChoiceButton.isHidden = true
         timerLabel.isHidden = true
-        logoView.isHidden = true
+        //logoView.isHidden = true
 
         
         // Display play again button
@@ -140,21 +159,34 @@ class QwizSongViewController: UIViewController {
             questionField.text = "Vous avez gagné l'OR! \n Vous avez \(correctQuestions) sur \(questionsPerRound) correct!"
             loadGameSoundFinished()
             playGameSoundFinished()
+            logoView.image = nil
+         
+             logoView.image = UIImage(named: "gold.jpg")
             
         } else if correctQuestions <= 11 && correctQuestions >= 10 {
             questionField.text = "Vous avez gagné l'ARGENT! \n Vous avez \(correctQuestions) sur \(questionsPerRound)"
             loadGameSoundFinished()
             playGameSoundFinished()
+            logoView.image = nil
+            logoView.image = UIImage(named: "solver.jpg")
             
         } else if correctQuestions <= 9 && correctQuestions >= 8 {
             questionField.text = "Vous avez gagné le BRONZE! \n Vous avez \(correctQuestions) sur \(questionsPerRound)"
             loadGameSoundFinished()
             playGameSoundFinished()
+           logoView.image = nil
+            logoView.image = UIImage(named: "bronze.jpg")
             
         } else {
-            questionField.text = "Réessayer!\n Vous avez \(correctQuestions) sur \(questionsPerRound)"
+            questionField.text = "Réessayer!\n Vous avez \(correctQuestions)  sur \(questionsPerRound)"
             loadGameSoundRetry()
             playGameSoundRetry()
+            logoView.image = nil
+            logoView.image = UIImage(named: "bronze.jpg")
+            
+          /*  let gifImage = UIImage(gifName: "loser.gif")
+            self.logoView.setGifImage(gifImage, manager: gifManager, loopCount: -1)*/
+            
         }
         
     }
@@ -180,13 +212,16 @@ class QwizSongViewController: UIViewController {
             disableButtons()
             lightningTimer.invalidate()
         }
-        
+ 
+           logoView.image = nil
         loadNextRoundWithDelay(seconds: 3)
     }
     
     func nextRound() {
+        
         if questionsAsked == questionsPerRound {
             // Game is over
+            
             displayScore()
             lightningTimer.invalidate()
             resetTimer()
@@ -203,7 +238,8 @@ class QwizSongViewController: UIViewController {
         thirdChoiceButton.isHidden = false
         fourthChoiceButton.isHidden = false
         timerLabel.isHidden = false
-        
+         logoView.image = nil
+        playAgainButton.setTitle( "Recommencer" , for: .normal)
         questionsAsked = 0
         correctQuestions = 0
         previousQuestionsArray.removeAll()

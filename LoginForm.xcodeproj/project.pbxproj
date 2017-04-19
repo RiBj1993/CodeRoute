@@ -22,6 +22,7 @@
 		610637A31E959A8F00CDC43B /* road17.gif in Resources */ = {isa = PBXBuildFile; fileRef = 610637A21E959A8F00CDC43B /* road17.gif */; };
 		610637A51E959C8300CDC43B /* road1.gif in Resources */ = {isa = PBXBuildFile; fileRef = 610637A41E959C8300CDC43B /* road1.gif */; };
 		611A838C1E6E72A900806A3D /* pm.m in Sources */ = {isa = PBXBuildFile; fileRef = 611A838B1E6E72A900806A3D /* pm.m */; };
+		611B61111EA725C100C24774 /* loser.gif in Resources */ = {isa = PBXBuildFile; fileRef = 611B61101EA725C100C24774 /* loser.gif */; };
 		61305C791E94571400B93099 /* UPCarouselFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61305C6B1E94571400B93099 /* UPCarouselFlowLayout.swift */; };
 		61305C7B1E94571400B93099 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61305C6E1E94571400B93099 /* GradientView.swift */; };
 		61305C7C1E94571400B93099 /* SlideViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61305C6F1E94571400B93099 /* SlideViewController.swift */; };
@@ -154,6 +155,7 @@
 		610637A21E959A8F00CDC43B /* road17.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = road17.gif; sourceTree = "<group>"; };
 		610637A41E959C8300CDC43B /* road1.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = road1.gif; sourceTree = "<group>"; };
 		611A838B1E6E72A900806A3D /* pm.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = pm.m; path = ../../pm.m; sourceTree = "<group>"; };
+		611B61101EA725C100C24774 /* loser.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = loser.gif; sourceTree = "<group>"; };
 		61305C6B1E94571400B93099 /* UPCarouselFlowLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UPCarouselFlowLayout.swift; sourceTree = "<group>"; };
 		61305C6E1E94571400B93099 /* GradientView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 		61305C6F1E94571400B93099 /* SlideViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SlideViewController.swift; sourceTree = "<group>"; };
@@ -663,6 +665,7 @@
 			children = (
 				619A1D9C1E6F4D1C00A52FFF /* QwizSongViewController.swift */,
 				6187B5011EA5976900F5A842 /* GameSoundWrong.wav */,
+				611B61101EA725C100C24774 /* loser.gif */,
 				6187B5021EA5976900F5A842 /* GameSoundCorrect.wav */,
 				6187B5031EA5976900F5A842 /* GameSound.wav */,
 				6187B5041EA5976900F5A842 /* GameSoundFinished.wav */,
@@ -898,6 +901,7 @@
 			files = (
 				6106379B1E95947B00CDC43B /* road3.gif in Resources */,
 				6187B5081EA5976900F5A842 /* GameSoundWrong.wav in Resources */,
+				611B61111EA725C100C24774 /* loser.gif in Resources */,
 				B0802A251DFE9E19000517D7 /* LaunchScreen.storyboard in Resources */,
 				61EC1F681E6FA11D0023D832 /* content_1@3x.png in Resources */,
 				610637A11E959A8500CDC43B /* road16.gif in Resources */,
