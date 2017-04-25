@@ -46,6 +46,23 @@
 		6147EE771E94AC9D0040CB92 /* 5.gif in Resources */ = {isa = PBXBuildFile; fileRef = 6147EE691E94AC9D0040CB92 /* 5.gif */; };
 		6147EE781E94AC9D0040CB92 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6147EE6A1E94AC9D0040CB92 /* Info.plist */; };
 		6147EE7A1E94ADC60040CB92 /* PHOGIF.gif in Resources */ = {isa = PBXBuildFile; fileRef = 6147EE791E94ADC60040CB92 /* PHOGIF.gif */; };
+		61505B3E1EAE65070009881D /* GoogleOpenSource.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61505B3C1EAE65070009881D /* GoogleOpenSource.framework */; };
+		61505B3F1EAE65070009881D /* GooglePlus.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61505B3D1EAE65070009881D /* GooglePlus.framework */; };
+		61505B411EAE67150009881D /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61505B401EAE67150009881D /* AddressBook.framework */; };
+		61505B451EAE675A0009881D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61505B441EAE675A0009881D /* Foundation.framework */; };
+		61505B471EAE67690009881D /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61505B461EAE67690009881D /* CoreLocation.framework */; };
+		61505B491EAE67780009881D /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61505B481EAE67780009881D /* CoreMotion.framework */; };
+		61505B4B1EAE67880009881D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61505B4A1EAE67880009881D /* CoreGraphics.framework */; };
+		61505B4D1EAE67990009881D /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61505B4C1EAE67990009881D /* CoreText.framework */; };
+		61505B4F1EAE67A90009881D /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61505B4E1EAE67A90009881D /* MediaPlayer.framework */; };
+		61505B511EAE67BB0009881D /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61505B501EAE67BB0009881D /* Security.framework */; };
+		61505B531EAE67CA0009881D /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61505B521EAE67CA0009881D /* SystemConfiguration.framework */; };
+		61505B551EAE67DA0009881D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61505B541EAE67DA0009881D /* UIKit.framework */; };
+		61505B571EAE687A0009881D /* GooglePlus.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 61505B561EAE687A0009881D /* GooglePlus.bundle */; };
+		61505B5A1EAEAFC20009881D /* GoogleSignIn.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61505B591EAEAFC20009881D /* GoogleSignIn.framework */; };
+		61505B5C1EAEB60A0009881D /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61505B5B1EAEB60A0009881D /* StoreKit.framework */; };
+		61505B5E1EAEB6380009881D /* SafariServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61505B5D1EAEB6380009881D /* SafariServices.framework */; };
+		61505B601EAEB6520009881D /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 61505B5F1EAEB6520009881D /* libz.tbd */; };
 		6159B1CD1E775E2800A3E465 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6159B1CC1E775E2800A3E465 /* MediaPlayer.framework */; };
 		6159B1EC1E775E5D00A3E465 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6159B1CF1E775E5D00A3E465 /* AboutViewController.swift */; };
 		6159B1ED1E775E5D00A3E465 /* InfoDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6159B1D01E775E5D00A3E465 /* InfoDetailViewController.swift */; };
@@ -179,6 +196,25 @@
 		6147EE691E94AC9D0040CB92 /* 5.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = 5.gif; sourceTree = "<group>"; };
 		6147EE6A1E94AC9D0040CB92 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6147EE791E94ADC60040CB92 /* PHOGIF.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = PHOGIF.gif; path = ../../../Desktop/PHOGIF.gif; sourceTree = "<group>"; };
+		61505B3C1EAE65070009881D /* GoogleOpenSource.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleOpenSource.framework; sourceTree = "<group>"; };
+		61505B3D1EAE65070009881D /* GooglePlus.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GooglePlus.framework; sourceTree = "<group>"; };
+		61505B401EAE67150009881D /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
+		61505B421EAE67470009881D /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
+		61505B441EAE675A0009881D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		61505B461EAE67690009881D /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		61505B481EAE67780009881D /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		61505B4A1EAE67880009881D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		61505B4C1EAE67990009881D /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
+		61505B4E1EAE67A90009881D /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		61505B501EAE67BB0009881D /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		61505B521EAE67CA0009881D /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		61505B541EAE67DA0009881D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		61505B561EAE687A0009881D /* GooglePlus.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = GooglePlus.bundle; path = "../../Downloads/google-plus-ios-sdk-1.7-2.1/GooglePlus.bundle"; sourceTree = "<group>"; };
+		61505B581EAE7A580009881D /* IOS Google Sign In-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "IOS Google Sign In-Bridging-Header.h"; sourceTree = "<group>"; };
+		61505B591EAEAFC20009881D /* GoogleSignIn.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleSignIn.framework; sourceTree = "<group>"; };
+		61505B5B1EAEB60A0009881D /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		61505B5D1EAEB6380009881D /* SafariServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SafariServices.framework; path = System/Library/Frameworks/SafariServices.framework; sourceTree = SDKROOT; };
+		61505B5F1EAEB6520009881D /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		6159B1CC1E775E2800A3E465 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = "../../GuillotineMenu-master/GuillotineMenuExample/GuillotineMenuExample/MediaPlayer.framework"; sourceTree = "<group>"; };
 		6159B1CE1E775E5D00A3E465 /* SwiftRadio.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.entitlements; path = SwiftRadio.entitlements; sourceTree = "<group>"; };
 		6159B1CF1E775E5D00A3E465 /* AboutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
@@ -321,10 +357,26 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				61505B601EAEB6520009881D /* libz.tbd in Frameworks */,
+				61505B5E1EAEB6380009881D /* SafariServices.framework in Frameworks */,
+				61505B531EAE67CA0009881D /* SystemConfiguration.framework in Frameworks */,
+				61505B5C1EAEB60A0009881D /* StoreKit.framework in Frameworks */,
+				61505B551EAE67DA0009881D /* UIKit.framework in Frameworks */,
+				61505B511EAE67BB0009881D /* Security.framework in Frameworks */,
+				61505B4F1EAE67A90009881D /* MediaPlayer.framework in Frameworks */,
+				61505B4D1EAE67990009881D /* CoreText.framework in Frameworks */,
+				61505B4B1EAE67880009881D /* CoreGraphics.framework in Frameworks */,
+				61505B491EAE67780009881D /* CoreMotion.framework in Frameworks */,
+				61505B471EAE67690009881D /* CoreLocation.framework in Frameworks */,
+				61505B451EAE675A0009881D /* Foundation.framework in Frameworks */,
+				61505B411EAE67150009881D /* AddressBook.framework in Frameworks */,
 				61A0316D1EA6942C005E105E /* Bolts.framework in Frameworks */,
 				61A0316E1EA6942C005E105E /* FBSDKCoreKit.framework in Frameworks */,
+				61505B3F1EAE65070009881D /* GooglePlus.framework in Frameworks */,
 				61A0316F1EA6942C005E105E /* FBSDKLoginKit.framework in Frameworks */,
+				61505B5A1EAEAFC20009881D /* GoogleSignIn.framework in Frameworks */,
 				6159B1CD1E775E2800A3E465 /* MediaPlayer.framework in Frameworks */,
+				61505B3E1EAE65070009881D /* GoogleOpenSource.framework in Frameworks */,
 				7B673EAEF80BB1C12A5A127F /* Pods_LoginForm.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -335,6 +387,20 @@
 		07880B66DC389C4574DA9518 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				61505B5F1EAEB6520009881D /* libz.tbd */,
+				61505B5D1EAEB6380009881D /* SafariServices.framework */,
+				61505B5B1EAEB60A0009881D /* StoreKit.framework */,
+				61505B541EAE67DA0009881D /* UIKit.framework */,
+				61505B521EAE67CA0009881D /* SystemConfiguration.framework */,
+				61505B501EAE67BB0009881D /* Security.framework */,
+				61505B4E1EAE67A90009881D /* MediaPlayer.framework */,
+				61505B4C1EAE67990009881D /* CoreText.framework */,
+				61505B4A1EAE67880009881D /* CoreGraphics.framework */,
+				61505B481EAE67780009881D /* CoreMotion.framework */,
+				61505B461EAE67690009881D /* CoreLocation.framework */,
+				61505B441EAE675A0009881D /* Foundation.framework */,
+				61505B421EAE67470009881D /* AssetsLibrary.framework */,
+				61505B401EAE67150009881D /* AddressBook.framework */,
 				6159B2081E77664900A3E465 /* Spring */,
 				6159B2061E7762E100A3E465 /* SwiftyJSON.swift */,
 				77153FB75F43311978A76E26 /* Pods_LoginForm.framework */,
@@ -488,6 +554,18 @@
 			);
 			name = SwiftyGifExample;
 			path = "../../Downloads/SwiftyGif-master/SwiftyGifExample";
+			sourceTree = "<group>";
+		};
+		61505B3B1EAE64F50009881D /* google+ */ = {
+			isa = PBXGroup;
+			children = (
+				61505B591EAEAFC20009881D /* GoogleSignIn.framework */,
+				61505B581EAE7A580009881D /* IOS Google Sign In-Bridging-Header.h */,
+				61505B561EAE687A0009881D /* GooglePlus.bundle */,
+				61505B3C1EAE65070009881D /* GoogleOpenSource.framework */,
+				61505B3D1EAE65070009881D /* GooglePlus.framework */,
+			);
+			name = "google+";
 			sourceTree = "<group>";
 		};
 		6159B1D41E775E5D00A3E465 /* ViewControllers */ = {
@@ -755,6 +833,7 @@
 		B0802A0E1DFE9E19000517D7 = {
 			isa = PBXGroup;
 			children = (
+				61505B3B1EAE64F50009881D /* google+ */,
 				61A031701EA69432005E105E /* facebook */,
 				6187B5101EA59B4D00F5A842 /* qwiz1 */,
 				6187B50F1EA59AC700F5A842 /* menublur */,
@@ -900,6 +979,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6106379B1E95947B00CDC43B /* road3.gif in Resources */,
+				61505B571EAE687A0009881D /* GooglePlus.bundle in Resources */,
 				6187B5081EA5976900F5A842 /* GameSoundWrong.wav in Resources */,
 				611B61111EA725C100C24774 /* loser.gif in Resources */,
 				B0802A251DFE9E19000517D7 /* LaunchScreen.storyboard in Resources */,

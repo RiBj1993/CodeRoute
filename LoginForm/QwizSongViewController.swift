@@ -182,7 +182,7 @@ playAgainButton.setTitle( "Commencer" , for: .normal)
             loadGameSoundRetry()
             playGameSoundRetry()
             logoView.image = nil
-            logoView.image = UIImage(named: "bronze.jpg")
+            logoView.image = UIImage(named: "loser.gif")
             
           /*  let gifImage = UIImage(gifName: "loser.gif")
             self.logoView.setGifImage(gifImage, manager: gifManager, loopCount: -1)*/

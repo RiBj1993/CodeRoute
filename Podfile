@@ -22,6 +22,7 @@ source 'https://github.com/CocoaPods/Specs.git'
 use_frameworks!
 pod 'SwiftyGif'
 pod 'GoogleSignIn'
+pod 'Google/SignIn'
 pod 'FirebaseUI', '~> 0.3'   
 
 

@@ -79,6 +79,9 @@
                                                                             </userDefinedRuntimeAttribute>
                                                                             <userDefinedRuntimeAttribute type="boolean" keyPath="shadow" value="YES"/>
                                                                         </userDefinedRuntimeAttributes>
+                                                                        <connections>
+                                                                            <action selector="signIn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YiF-4X-hF1"/>
+                                                                        </connections>
                                                                     </button>
                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="OR" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U6e-C7-SZ5">
                                                                         <constraints>
@@ -323,6 +326,7 @@
                         <outlet property="orLabel" destination="U6e-C7-SZ5" id="uxG-XJ-RoQ"/>
                         <outlet property="passwordTextField" destination="fLF-Zg-gdN" id="kM2-Zw-Qhi"/>
                         <outlet property="signInButton" destination="a0w-aj-iJ4" id="ogq-WY-E8P"/>
+                        <segue destination="Oj2-cz-ZhE" kind="show" identifier="googleF" id="kfc-RU-onk"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -908,7 +912,7 @@
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                         <connections>
-                                            <segue destination="BYZ-38-t0r" kind="show" id="bjL-EI-lqq"/>
+                                            <segue destination="BYZ-38-t0r" kind="show" identifier="googleF" id="bjL-EI-lqq"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fsi-qj-Xln" userLabel="Qwiz" customClass="SpringButton" customModule="LoginForm" customModuleProvider="target">
@@ -1579,7 +1583,7 @@
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
                                         <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        <state key="normal" title="Dismiss"/>
+                                        <state key="normal" title="Commencer"/>
                                         <connections>
                                             <action selector="dismissButtonTapped:" destination="smw-bW-AUy" eventType="touchUpInside" id="23h-hA-LH5"/>
                                             <segue destination="TJY-ns-Mz3" kind="show" identifier="segue2" id="SHE-hw-NUF"/>
@@ -2447,8 +2451,8 @@
         <image name="vol-min" width="11" height="12"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="U6K-gv-Yoe"/>
-        <segue reference="Eft-xc-rN2"/>
+        <segue reference="BOc-Cd-dUv"/>
         <segue reference="bjL-EI-lqq"/>
+        <segue reference="kfc-RU-onk"/>
     </inferredMetricsTieBreakers>
 </document>
