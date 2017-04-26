@@ -24,7 +24,7 @@ let REGEX_EMAIL = "[A-Z0-9a-z._%+-]{3,}+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,4}"
 let REGEX_PASSWORD_LIMIT = "^.{6,20}$"
 let REGEX_PASSWORD = "[A-Za-z0-9]{6,20}"
 
-class LoginViewController: UIViewController,UITextFieldDelegate , GIDSignInUIDelegate {
+class LoginViewController: UIViewController,UITextFieldDelegate , GIDSignInUIDelegate  {
     let rootRef = FIRDatabase.database().reference()
     let storage = FIRStorage.storage()
     let ref: FIRDatabaseReference? = nil
@@ -80,7 +80,8 @@ class LoginViewController: UIViewController,UITextFieldDelegate , GIDSignInUIDel
         print("Signing In..")
         print("Email text: \(emailTextField.text!)")
         
-        self.view.endEditing(true)
+        
+        if (emailTextField.text?.trimmingCharacters(in: .whitespacesAndNewlines) != ""  ||   passwordTextField.text?.trimmingCharacters(in: .whitespacesAndNewlines) != "" ) {
         
         if(emailTextField.validate() && passwordTextField.validate())
         {
@@ -104,6 +105,17 @@ class LoginViewController: UIViewController,UITextFieldDelegate , GIDSignInUIDel
         }else{
             print("Something is wrong")
         }
+        
+    }
+        else{
+    let alert = UIAlertController(title: "verifier email ou password", message: nil, preferredStyle: .alert)
+    
+    alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+    
+    self.present(alert, animated: true, completion: nil)
+    
+    }
+
 
     }
     //Handle your logic for siging with social media here
@@ -135,58 +147,14 @@ class LoginViewController: UIViewController,UITextFieldDelegate , GIDSignInUIDel
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
     }
-    func sign(_ signIn: GIDSignIn!, didSignInFor user: GIDGoogleUser!, withError error: Error!) {
-        if let error = error {
-            print("failed to log into google: ", error)
-            return
-        }
         
-       print("successfully logged into google ", user)
-        
-        guard let idToken = user.authentication.idToken else { return }
-        guard let accessToken = user.authentication.accessToken else { return }
-        let credentials = FIRGoogleAuthProvider.credential(withIDToken: idToken, accessToken: accessToken)
-        
-        FIRAuth.auth()?.signIn(with: credentials, completion: { (user, error) in
-            if let error = error {
-                print("Faild to create a firebase user with google account: ", error)
-                return
-            }
-            
-            guard let uid = user?.uid else { return }
-            print("Successfully logged into firebase with google ", uid)
-            self.performSegue(withIdentifier: "googleF", sender: self )
- 
-            
-
-            
-            
-        })
- 
-    }
-
-    
     
     
     @IBAction func connectWithGoogle(_ sender: Any) {
+          print("**********************************")
         GIDSignIn.sharedInstance().signIn()
-        //passwordTextField: TextFieldValidator!
-        // @IBOutlet  weak var emailTextField: TextFieldValidator!
-        
-     /*   FIRAuth.auth()?.signIn(withEmail: emailTextField.text as Any as! String, password:
-            passwordTextField.text as Any as! String,completion: { (user, error) in
-                
-                if user != nil{
-                    print ("user exists and logged")
-                    
-                    
-                    self.performSegue(withIdentifier: "showMenuSegue", sender: self)
-                    
-                }
-                else{
-                    print ("no user ")}
-                
-        })*/
+        print("**********************************")
+
         
     }
 }

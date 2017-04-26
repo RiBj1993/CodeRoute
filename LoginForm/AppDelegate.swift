@@ -31,7 +31,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate   {
     override init(){
         FIRApp.configure()
        GIDSignIn.sharedInstance().clientID = FIRApp.defaultApp()?.options.clientID
-
+   
         
     }
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
@@ -39,7 +39,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate   {
         FBSDKApplicationDelegate.sharedInstance().application(application, didFinishLaunchingWithOptions: launchOptions)
         
         var configureError: NSError?
-       GGLContext.sharedInstance().configureWithError(&configureError)
+        GGLContext.sharedInstance().configureWithError(&configureError)
         assert(configureError == nil, "Error configuring Google services: \(String(describing: configureError))")
      
         return true
@@ -55,12 +55,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate   {
     }*/
     
     func application(_ app: UIApplication, open url: URL, options: [UIApplicationOpenURLOptionsKey : Any]) -> Bool {
-        let googleHandler = GIDSignIn.sharedInstance().handle(url, sourceApplication: options[UIApplicationOpenURLOptionsKey.sourceApplication] as? String, annotation: options[UIApplicationOpenURLOptionsKey.annotation])
+       
         
         let sourceApplication =  options[UIApplicationOpenURLOptionsKey.sourceApplication] as? String
         let annotation = options[UIApplicationOpenURLOptionsKey.annotation]
         
-        
+         let googleHandler = GIDSignIn.sharedInstance().handle(url, sourceApplication: options[UIApplicationOpenURLOptionsKey.sourceApplication] as? String, annotation: options[UIApplicationOpenURLOptionsKey.annotation])
         
         let facebookHandler = FBSDKApplicationDelegate.sharedInstance().application (
             app,
@@ -71,6 +71,37 @@ class AppDelegate: UIResponder, UIApplicationDelegate   {
         return googleHandler || facebookHandler
     }
     
+    func signIn(_ signIn: GIDSignIn!, didSignInFor user: GIDGoogleUser!, withError error: Error!) {
+        if let error = error {
+            print("failed to log into google: ", error)
+            return
+        }
+        
+        print("successfully logged into google ", user)
+        
+        guard let idToken = user.authentication.idToken else { return }
+        guard let accessToken = user.authentication.accessToken else { return }
+        let credentials = FIRGoogleAuthProvider.credential(withIDToken: idToken, accessToken: accessToken)
+        
+        FIRAuth.auth()?.signIn(with: credentials, completion: { (user, error) in
+            if let error = error {
+                print("Faild to create a firebase user with google account: ", error)
+                return
+            }
+            
+            guard let uid = user?.uid else { return }
+            print("Successfully logged into firebase with google ", uid)
+           
+            
+            
+            
+            
+            
+        })
+        
+    }
+    
+
   /*private func application(application: UIApplication, openURL url: URL, sourceApplication: String?, annotation: AnyObject) -> Bool {
         
 

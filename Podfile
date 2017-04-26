@@ -10,6 +10,7 @@ target 'LoginForm' do
 
 pod 'Firebase'
 pod 'FirebaseAuth'
+pod 'Firebase/Auth'
 pod 'FirebaseDatabase'
 pod 'GoogleSignIn'
 pod 'Firebase/Storage'
